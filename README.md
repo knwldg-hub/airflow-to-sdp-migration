@@ -44,12 +44,12 @@ Genie Code loads a skill from a folder that contains `SKILL.md`, under `.assista
 
 `SKILL.md` is at the root of this repo, so cloning the repo as a Git folder inside a skills folder installs the skill directly. Updating is just **Pull**.
 
-**Folder name:** name the Git folder `airflow-to-sdp-migration` so it matches the skill `name` in the `SKILL.md` frontmatter.
+**Folder name:** keep the default Git folder name, `airflow-to-sdp-migration`. It matches the skill `name` in the `SKILL.md` frontmatter.
 
 ### Option 1: for yourself (recommended first)
 
 1. In Genie Code, click **Settings → Open skills folder**. This opens `/Users/<you>/.assistant/skills/`, creating it if needed.
-2. In that folder, choose **Create → Git folder**, paste `https://github.com/knwldg-hub/dbx-airflow-to-sdp-migration.git`, set the folder name to `airflow-to-sdp-migration`, and click **Create**.
+2. In that folder, choose **Create → Git folder**, paste `https://github.com/knwldg-hub/airflow-to-sdp-migration.git`, keep the default folder name, and click **Create**.
 3. Start a new Genie Code chat.
 
 To update: open the Git folder, click **Pull**, then start a new chat.
@@ -57,7 +57,7 @@ To update: open the Git folder, click **Pull**, then start a new chat.
 ### Option 2: for the whole workspace (admin)
 
 1. As a workspace admin, open `Workspace/.assistant/skills/` (create `.assistant` and `skills` if they don't exist; folders starting with a dot may be hidden).
-2. Choose **Create → Git folder**, paste `https://github.com/knwldg-hub/dbx-airflow-to-sdp-migration.git`, set the folder name to `airflow-to-sdp-migration`, and click **Create**.
+2. Choose **Create → Git folder**, paste `https://github.com/knwldg-hub/airflow-to-sdp-migration.git`, keep the default folder name, and click **Create**.
 3. Make sure users can read the folder.
 
 Users get the skill in their next Genie Code chat. To update everyone: open the Git folder and click **Pull**.
