@@ -62,13 +62,19 @@ To update: open the Git folder, click **Pull**, then start a new chat.
 
 Users get the skill in their next Genie Code chat. To update everyone: open the Git folder and click **Pull**.
 
-### Option 3: register an existing Git folder
+### Option 3: keep it in another folder and register it
 
-If you already cloned this repo elsewhere, register its **parent** folder in Genie Code **Settings** (enter the path and click **Add folder**). The registered folder must contain the skill folder, not be the skill folder itself.
+Use this to keep the skill outside `.assistant/skills/`. Genie Code registers a folder that *contains* skill folders, not a skill folder itself, so give the clone its own parent folder:
+
+1. Create a parent folder, for example `/Users/<you>/skills`, and clone this repo inside it, keeping the default name: `/Users/<you>/skills/airflow-to-sdp-migration`.
+2. In Genie Code, click **Settings**, enter `/Users/<you>/skills` in the add-skill field, and click **Add folder**.
+3. Make sure the skill's toggle is on, then start a new chat.
+
+Don't register a broad folder such as your whole user folder; every subfolder with a `SKILL.md` would be picked up.
 
 ### Option 4: copy the files (if you can't create a Git folder)
 
-From a local clone of this repo, with the Databricks CLI:
+On GitHub, click **Code → Download ZIP** and unzip it (the ZIP has no `.git` folder, so nothing extra is copied). From the unzipped folder, with the Databricks CLI:
 
 ```bash
 databricks workspace import-dir . \
